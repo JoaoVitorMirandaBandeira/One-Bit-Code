@@ -12,5 +12,5 @@
     Dados armazenados em pequenos arquivos de texto no computador do cliente 
     Podem possuir data de expiração
     Forma mais tradicional de "Lembrar" de informações 
-    São enviados na requisição e podem existir no servidor, sendo devolvidos quando uma pagina HTML for solicitada
+    São enviados na requisição e podem existir no servidor, sendo devolvidos quando uma pagina HTML for solicitada oi
  */

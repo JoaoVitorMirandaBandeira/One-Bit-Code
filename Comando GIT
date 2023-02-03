@@ -9,3 +9,25 @@ Somente a primeira vez(git config credential.helper store)
 git push -f origin main
 
 
+
+
+Erro ao fazer push
+
+O aviso que o comando git push está emitindo sinaliza que a sua árvore está dessincronizada em relação ao branch master do GitHub. Neste caso você tem duas opções:
+
+ignorar as diferenças e sobreescrever o branch master que está no GitHub fazendo um push forçado;
+fazer um merge dos dois branches (o seu master local e o do GitHub) e fazer novamente um git push.
+A primeira opção é a mais simples e mais arriscada. Ela irá ignorar os commits do branch master do GitHub e o sobreescreverá com o seu branch local. Para isso basta acrescentar o argumento --force:
+
+$ git push --set-upstream --force origin master
+Caso o servidor continue recusando o seu push, verifique se a opção para recusar forced pushes está habilitada na configuração do seu repositório GitHub e desabilite-a.
+
+A segunda opção é um pouco mais complicada mas é mais segura. Ela deve ser executada em alguns passos:
+
+fazer checkout do branch master local: git checkout master
+certificar que você tem a cópia exata do branch master do GitHub com o comando git fetch origin;
+fazer um merge to seu branch master com o branch do GitHub: git merge origin/master;
+caso haja pendências como conflitos, por exemplo, resolva-as e faça commit (git mergetool?);
+finalmente faça o push: git push --set-upstream origin master
+Ah, você pode juntar os passos 2 e 3 em apenas um se usar o comando pull: git pull origin
+
