@@ -1,0 +1,191 @@
+.white {
+  color: #fff !important;
+}
+.conteudo-11 {
+  background-image: url("../img/falcon9/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+  h1 {
+    text-shadow: black 2px 2px 2px;
+  }
+  p {
+    text-shadow: black 2px 2px 2px;
+  }
+  header {
+    font-size: 12px;
+    font-weight: bold;
+    .img-logo {
+      width: 200px;
+    }
+    .navbar {
+      background-color: transparent !important;
+      color: #fff !important;
+    }
+    .nav-link {
+      color: #fff;
+    }
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  img {
+    width: 130px;
+  }
+}
+.number {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  height: 40vh;
+  h1 {
+    font-size: 5rem;
+    color: #fff;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+.conteudo-12 {
+  background-image: url("../img/falcon9/02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+  .text-2 {
+    width: 550px;
+    padding-top: 200px;
+    padding-left: 100px;
+    line-height: 35px;
+  }
+}
+.conteudo-13 {
+  min-height: 100vh;
+  .conteudo-13-1 {
+    background-image: url("../img/falcon9/03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .conteudo-13-2 {
+    background-image: url("../img/falcon9/04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .conteudo-13-3 {
+    background-image: url("../img/falcon9/05.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .conteudo-13-4 {
+    background-image: url("../img/falcon9/06.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+  .conteudo-13-5 {
+    background-image: url("../img/falcon9/07.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+}
+#overViewPosition {
+  width: 450px;
+  margin-left: 13%;
+  padding-top: 15%;
+  h3 {
+    color: #fff;
+    font-size: 25px;
+  }
+  td {
+    color: #fff;
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 350;
+  }
+  h6 {
+    color: #fff !important;
+    font-weight: 300;
+  }
+}
+.conteudo-14 {
+  background-image: url("../img/falcon9/08.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.conteudo-15 {
+  min-height: 100vh;
+  width: 100%;
+  p {
+    text-shadow: 1px 1px 1px black;
+  }
+  .conteudo-15-1 {
+    background-image: url("../img/falcon9/09.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  .conteudo-15-2 {
+    background-image: url("../img/falcon9/10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  .conteudo-15-3 {
+    background-image: url("../img/falcon9/11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  .conteudo-15-4 {
+    background-image: url("../img/falcon9/12.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  .conteudo-15-5 {
+    background-image: url("../img/falcon9/13.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  .conteudo-15-6 {
+    background-image: url("../img/falcon9/14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  background-image: url("../img/backgroundLp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+}
+body .container1 {
+  width: 500px;
+  background-color: rgba(19, 18, 18, 0.9450980392);
+  border-radius: 20px;
+}
+body .logo {
+  width: 180px;
+}
+body .footer {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+body .concluir {
+  color: #ff0043;
+  border: 1px solid #ff0043;
+}
+body .concluir:hover {
+  background-color: #ff0043;
+}
+
+@media (max-width: 590px) {
+  body {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  body .container1 {
+    width: 100%;
+    background-color: rgba(19, 18, 18, 0.9450980392);
+  }
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

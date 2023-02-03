@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkgray;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  gap: 2vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.itens {
+  background-color: aliceblue;
+  width: 200px;
+  height: 20vh;
+  border: solid 2px black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

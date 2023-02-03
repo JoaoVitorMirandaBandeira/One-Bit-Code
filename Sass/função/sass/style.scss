@@ -1,0 +1,19 @@
+/*#title {
+  color: mix(red, blue, 40%);
+}*/
+@function color-title($background-color) {
+  @if (lightness($background-color) > 50) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+@mixin backgroud-color-mixin($color) {
+  background-color: $color;
+  color: color-title($color);
+}
+
+.title {
+  @include backgroud-color-mixin(rgb(253, 253, 34));
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+div.post-container {
+  width: 70%;
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+  background-color: #fcefef;
+  border-radius: 0px 30px 30px 30px;
+}
+div.post {
+  /*background-color: rgb(11, 36, 36);*/
+  margin: auto;
+  width: 90%;
+}
+p.date {
+  font-family: Roboto;
+  color: #009b9b;
+}
+div.post-container h1 {
+  font-family: Montserrat;
+}
+div.post-content p {
+  font-family: Open Sans;
+}

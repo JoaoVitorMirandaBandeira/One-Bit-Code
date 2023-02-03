@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+body .titlePadding {
+  padding-top: 200px;
+}
+body .mediumTitle {
+  width: 550px;
+}
+body p {
+  color: #fff !important;
+}
+body #button {
+  padding: 15px 35px;
+  border: 2px solid #fff;
+}
+body .titleWidth {
+  width: 400px;
+}
+
+.conteudo-1 {
+  background-image: url("../img/home/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+}
+.conteudo-1 header {
+  height: 80px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.conteudo-1 header .img-logo {
+  width: 200px;
+}
+.conteudo-1 header .navbar {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.conteudo-1 header .nav-link {
+  color: #fff !important;
+}
+
+.conteudo-2 {
+  background-image: url("../img/home/03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.conteudo-3 {
+  background-image: url("../img/home/02.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.conteudo-4 {
+  background-image: url("../img/home/04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer > span {
+  color: rgb(95, 95, 95);
+}
+
+.cor {
+  color: black !important;
+}
+
+.conteudo-5 {
+  background-image: url("../img/humanFlight/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-5 header {
+  font-size: 12px;
+  font-weight: bold;
+}
+.conteudo-5 header .img-logo {
+  width: 200px;
+}
+.conteudo-5 header .navbar {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.conteudo-5 header .nav-link {
+  color: #fff;
+}
+.conteudo-5 h1 {
+  font-size: 5rem;
+}
+.conteudo-5 p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.conteudo-5 img {
+  width: 130px;
+}
+
+.container-flex {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textMeio {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.textMeio p {
+  width: 600px;
+}
+.textMeio a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.conteudo-6 {
+  background-image: url("../img/humanFlight/02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-6 .h6 {
+  font-weight: 300;
+  font-size: 12px;
+}
+.conteudo-6 .h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.textRigth {
+  padding: 15%;
+  margin-left: 50%;
+}
+
+.conteudo-7 {
+  background-image: url("../img/humanFlight/03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-7 .h6 {
+  font-weight: 300;
+  font-size: 12px;
+}
+.conteudo-7 .h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.textLeft {
+  padding: 15%;
+}
+
+.conteudo-8 {
+  background-image: url("../img/humanFlight/04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-8 .h6 {
+  font-weight: 300;
+  font-size: 12px;
+}
+.conteudo-8 .h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.conteudo-9 {
+  background-image: url("../img/humanFlight/05.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-9 .h6 {
+  font-weight: 300;
+  font-size: 12px;
+}
+.conteudo-9 .h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.conteudo-10 {
+  padding-top: 15%;
+  background-color: black;
+  height: 80vh;
+}
+.conteudo-10 p {
+  font-size: 12px;
+}
+.conteudo-10 button {
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 900px) {
+  .textRigth {
+    padding: 15%;
+    margin-left: 35%;
+  }
+}
+@media (max-width: 700px) {
+  .textRigth {
+    padding: 15%;
+    margin-left: auto;
+  }
+  .textMeio p {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .conteudo-5 .h6 {
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .conteudo-5 h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .titleWidth {
+    width: 250px !important;
+  }
+  .mediumTitle {
+    width: 250px !important;
+  }
+  .textMeio p {
+    width: 250px;
+  }
+}
+.white {
+  color: #fff !important;
+}
+
+.conteudo-11 {
+  background-image: url("../img/falcon9/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-11 h1 {
+  text-shadow: black 2px 2px 2px;
+}
+.conteudo-11 p {
+  text-shadow: black 2px 2px 2px;
+}
+.conteudo-11 header {
+  font-size: 12px;
+  font-weight: bold;
+}
+.conteudo-11 header .img-logo {
+  width: 200px;
+}
+.conteudo-11 header .navbar {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.conteudo-11 header .nav-link {
+  color: #fff;
+}
+.conteudo-11 h1 {
+  font-size: 5rem;
+}
+.conteudo-11 p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.conteudo-11 img {
+  width: 130px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+.number h1 {
+  font-size: 5rem;
+  color: #fff;
+}
+.number p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.conteudo-12 {
+  background-image: url("../img/falcon9/02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.conteudo-12 .text-2 {
+  width: 550px;
+  padding-top: 200px;
+  padding-left: 100px;
+  line-height: 35px;
+}
+
+.conteudo-13 {
+  min-height: 100vh;
+}
+.conteudo-13 .conteudo-13-1 {
+  background-image: url("../img/falcon9/03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.conteudo-13 .conteudo-13-2 {
+  background-image: url("../img/falcon9/04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.conteudo-13 .conteudo-13-3 {
+  background-image: url("../img/falcon9/05.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.conteudo-13 .conteudo-13-4 {
+  background-image: url("../img/falcon9/06.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.conteudo-13 .conteudo-13-5 {
+  background-image: url("../img/falcon9/07.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#overViewPosition {
+  width: 450px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+#overViewPosition h3 {
+  color: #fff;
+  font-size: 25px;
+}
+#overViewPosition td {
+  color: #fff;
+  font-size: 12px;
+}
+#overViewPosition p {
+  font-size: 12px;
+  font-weight: 350;
+}
+#overViewPosition h6 {
+  color: #fff !important;
+  font-weight: 300;
+}
+
+.conteudo-14 {
+  background-image: url("../img/falcon9/08.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.conteudo-15 {
+  min-height: 100vh;
+  width: 100%;
+}
+.conteudo-15 p {
+  text-shadow: 1px 1px 1px black;
+}
+.conteudo-15 .conteudo-15-1 {
+  background-image: url("../img/falcon9/09.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.conteudo-15 .conteudo-15-2 {
+  background-image: url("../img/falcon9/10.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.conteudo-15 .conteudo-15-3 {
+  background-image: url("../img/falcon9/11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.conteudo-15 .conteudo-15-4 {
+  background-image: url("../img/falcon9/12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.conteudo-15 .conteudo-15-5 {
+  background-image: url("../img/falcon9/13.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.conteudo-15 .conteudo-15-6 {
+  background-image: url("../img/falcon9/14.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

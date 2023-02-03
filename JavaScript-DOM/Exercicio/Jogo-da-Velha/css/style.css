@@ -1,0 +1,25 @@
+#tabuleiro {
+  display: grid;
+  width: 19rem;
+  background-color: darkgrey;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  gap: 0.5rem;
+}
+
+#tabuleiro span {
+  display: grid;
+  background-color: ivory;
+  place-content: center;
+  font-size: 5rem;
+}
+
+.win {
+  background-color: greenyellow !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

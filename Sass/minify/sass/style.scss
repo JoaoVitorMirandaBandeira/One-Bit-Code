@@ -1,0 +1,17 @@
+.elemento-1 {
+  ul {
+    background-color: rgb(114, 114, 114);
+  }
+  li {
+    color: blue;
+  }
+  button {
+    background-color: gainsboro;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      color: white;
+      transition: 500ms;
+    }
+  }
+}

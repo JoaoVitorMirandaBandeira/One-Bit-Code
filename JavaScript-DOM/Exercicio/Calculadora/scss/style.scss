@@ -1,0 +1,120 @@
+$backgroud-primary : rgb(100, 100, 100);
+$backgroud-button : rgb(0, 139, 139);
+$color-border: darkgray;
+$heigth-button : 50px;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.dark{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background-color: $backgroud-primary;
+  display: flex;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  button:active{
+    background-color: $color-border;
+    color: black;
+  }
+}
+main{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #input{
+    width: 460px;
+    height: $heigth-button;
+    border: 2px solid $color-border ;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    text-align: end;
+    
+  }
+  #input:active{
+    border: 2px solid $color-border;
+  }
+  header{
+    width: 460px;
+    display: flex;
+    font-size: 20px ;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+      font-size: 30px;
+    }
+    button{
+      height: $heigth-button;
+      color: $color-border;
+      background-color: transparent;
+      border: 2px solid $color-border;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}
+#keys{
+  display: grid ;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 25px 0px;
+  
+  .charKey,#clear,#equal{
+    width: 100px;
+    height: $heigth-button;
+    background-color:$backgroud-button;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    font-size: 20px ;
+  }
+  .charKey:active,#clear:active,#equal:active{
+    box-shadow: none;
+  }
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  input{
+    background-color: transparent;
+    border: solid $color-border;
+    border-width: 2px 2px 2px 0px ;
+    border-radius: 0px 10px 10px 0px;
+    width: 400px;
+    height: 46.8px;
+    padding: 0;
+    color: $color-border;
+    font-size: 15px;
+    text-align: end;
+  }
+  button{
+    background-color: transparent;
+    border: 2px solid $color-border;
+    border-radius: 10px 0px 0px 10px;
+    width: 60px;
+    height: $heigth-button;
+    color: $color-border;
+    font-size: 15px;
+  }
+
+}
+
+.success{
+  border-color: darkcyan;
+  color: darkcyan;
+}
+
+.white{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+}

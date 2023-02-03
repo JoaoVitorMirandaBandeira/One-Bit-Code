@@ -1,0 +1,17 @@
+.elemento-1 ul {
+  background-color: rgb(114, 114, 114);
+}
+.elemento-1 li {
+  color: blue;
+}
+.elemento-1 button {
+  background-color: gainsboro;
+  cursor: pointer;
+}
+.elemento-1 button:hover {
+  background-color: black;
+  color: white;
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=style.css.map */

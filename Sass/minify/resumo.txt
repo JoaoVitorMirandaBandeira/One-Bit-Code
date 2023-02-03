@@ -1,0 +1,6 @@
+Para fazer a compreção e colocar tudo em uma unica linha
+usamos o seguinte comando 
+
+    sass sass/style.scss:css/style.css --style compressed
+
+OBS: Lembrar de sempre estar no mesmo diretorio do arquivo 

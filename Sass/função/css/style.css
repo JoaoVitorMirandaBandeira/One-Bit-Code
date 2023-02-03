@@ -1,0 +1,9 @@
+/*#title {
+  color: mix(red, blue, 40%);
+}*/
+.title {
+  background-color: rgb(253, 253, 34);
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
