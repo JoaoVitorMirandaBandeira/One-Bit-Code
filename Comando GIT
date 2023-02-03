@@ -1,0 +1,11 @@
+git init
+git >> README.md
+git add README.md  
+git add .  
+git commit -m ''
+ git branch -M "main"   
+Somente a primeira vez (git remote add origin URL)
+Somente a primeira vez(git config credential.helper store)
+git push -f origin main
+
+
