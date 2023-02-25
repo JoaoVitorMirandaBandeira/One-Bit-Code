@@ -4,6 +4,7 @@
         this.tag = tag
         this.father = father
         this.properties =properties
+        this.biuld()
     }
     getElement(){
         return  this.#element
