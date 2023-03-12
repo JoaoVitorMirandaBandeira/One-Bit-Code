@@ -1,0 +1,63 @@
+body{
+    background-image: url("./LandPage-transformed.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #02263De8;
+    min-width: 200px;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #FFF;
+    margin: 3rem 0px;
+    box-shadow: 10px 10px 10px #000000;
+    h1{
+        text-align: center;
+    }
+    .inputs{
+        margin: 0px 2rem;
+    }
+    .btn{
+        min-width: 100px;
+        width: 250px;
+        margin: 0px auto;
+        padding: 10px ;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #027D6A;
+        border: none;
+    }
+    .btn:hover{
+        background-color: #025c4e;
+        transition: 0.5s;
+    }
+    .btn:active{
+        background-color: #027D6A !important;
+    }
+    .erro{
+        padding-top: 4px;
+        display: block;
+        color: red;
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 15px;
+    }
+    .displayNone{
+        display: none;
+    }
+    .displayBlock{
+        display: block;
+    }
+}

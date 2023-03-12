@@ -1,26 +1,26 @@
-class Reservation{
-    constructor(guests, room, days, premium = false){
-        this.guests = guests
-        this.room = room
-        this.days = days
-        this.total = days * (premium === true ? Reservation.baseFeePremium : Reservation.baseFee)     
-    }
-    
-    static baseFee = 150
-    static baseFeePremium = Reservation.baseFee * 2
+function sum(a,b){
+    const firstNumber = Number(a)
+    const secondNumber = Number(b)
 
-    static returnBaseFee(){
-        console.log(Reservation.baseFee)
-    }
-    static returnBaseFeePremium(){
-        console.log(Reservation.baseFeePremium)
-    }
+    if(isNaN(firstNumber) || isNaN(secondNumber)){
+        throw new Error('Os argumentos precisão ser numeros')
+    }   
+    return firstNumber + secondNumber
 }
 
-Reservation.returnBaseFee();
 
-const quarto = new Reservation(3, "201",2)
-console.log(quarto)
 
-const quartoPremium = new Reservation(3, "202",3, true)
-console.log(quartoPremium)
+try{
+    console.log(sum(2, 9))
+    console.log(sum(true, 14))
+    console.log(sum(undefined, 22))
+    console.log(sum(18, "0"))
+    console.log(sum(39, null))
+    console.log(sum(13, "zero"))
+
+}catch(error){
+    console.log("Um erro aconteceu!")
+    console.log(error.message)
+}finally{
+    console.log("Calculos finalizados")
+}
