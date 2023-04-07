@@ -1,0 +1,15 @@
+.planet-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgrey;
+}
+
+.planet-descripton {
+    width: 300px;
+    color: darkgray;
+    font-style: italic;
+}
+
+.planet-link {
+    text-decoration: none;
+    color: rgb(82, 79, 79);
+}
