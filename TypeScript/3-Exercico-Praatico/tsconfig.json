@@ -2,6 +2,6 @@
     "compilerOptions": {
         "outDir": "dist",
         "watch": true,
-        "target": "ES5"
+        "target": "ESNEXT"
     }
 }
