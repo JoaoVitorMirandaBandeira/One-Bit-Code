@@ -33,3 +33,28 @@ function findSpaceShip(name: string){
     spaceship = spaceShips.find((e) => { e.name === name})
     return spaceship
 }
+
+function sendSpaceShip(nameSpaceShip: string){
+    const spaceShip = findSpaceShip(nameSpaceShip)
+    if(spaceShip){
+        if(spaceShip.inMission){
+            alert(`Nave ${spaceShip.name} ja se encontra em missão...`)
+        }else if(spaceShip.crewLimit > spaceShip.crew.length){
+            alert(`A tripulação da nave ${spaceShip.name} esta incompleta ...`)
+        }else{
+            const confirmation = confirm(`Deseja mesmo manadar ${spaceShip.name} em uma missão?`)
+            if(confirmation){
+                spaceShip.inMission = true
+                alert(`Nave ${spaceShip.name} enviada em missão com sucesso...`)
+            }else{
+                alert(`Envio da nave ${spaceShip.name} em missão cancelado...`)
+            }
+        }
+    }else{
+        alert(`A nave ${nameSpaceShip} não foi encontrada na base de dados...`)
+    }
+}
+
+function displaySpaceShips(){
+    
+}
