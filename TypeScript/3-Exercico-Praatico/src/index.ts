@@ -5,7 +5,7 @@ function creteSpaceShip(name:string, pilot:string, crewLimit: number){
         name,
         pilot,
         crewLimit,
-        crew : [crewLimit],
+        crew : [],
         inMission : false
     }
     spaceShips.push(spaceShip)
@@ -30,7 +30,7 @@ function findSpaceShip(name: string){
         crew: string[],
         inMission: boolean
       }
-    spaceship = spaceShips.find((e) => { e.name === name})
+    spaceship = spaceShips.find((e) => { return e.name === name})
     return spaceship
 }
 
@@ -57,4 +57,60 @@ function sendSpaceShip(nameSpaceShip: string){
 
 function displaySpaceShips(){
     
+    let text = `Lista de Espaçonaves\n`
+    spaceShips.forEach((spaceship: {
+        name: string,
+        pilot: string,
+        crewLimit:number,
+        crew: string[],
+        inMission: boolean
+    }) => {
+        let list = ``
+        text += `Nome: ${spaceship.name}
+        Piloto: ${spaceship.pilot}
+        Tamanho da tripulação: ${spaceship.crewLimit}
+        Tripulação: ${displayCrewSpaceShip(spaceship)}
+        Em Missão: ${spaceship.inMission ? `Sim\n\n` : `Não\n\n`}`
+    })
+    alert(text)
+}
+
+function displayCrewSpaceShip(spaceShip){
+    let list = ``
+    spaceShip.crew.forEach((e) => { list +=`\n            ${e}`})
+    return list
+}
+
+let control = true
+while(control){
+    let option = prompt(
+        `Painel de controle:
+            1 - Cadastrar Nave
+            2 - Adicionar tripulação
+            3 - Enviar Nave em missão
+            4 - Visualizar naves`
+    )
+    switch (option) {
+        case "1":
+            let name = prompt(`Nome da Espaçonave:`)
+            let pilot = prompt(`Nome do Capitão:`)
+            let crew  = Number(prompt(`Tamanho da tripulação:`))
+            creteSpaceShip(name,pilot,crew)
+            break;
+        case "2":
+            let nameSpaceShip = prompt(`Nome da espaçonave:`)
+            let nameTripulacao = prompt(`Nome do tripulante:`)
+            addCrewSpaceShip(nameSpaceShip,nameTripulacao)
+            break;
+        case "3":
+            let nameSpaceShipMission = prompt(`Nome da espaçonade a ser enviada:`)
+            sendSpaceShip(nameSpaceShipMission)
+            break;
+        case "4":
+            displaySpaceShips()
+            break;
+        default:
+            alert(`Opção invalida...`)
+            break;
+    }
 }
