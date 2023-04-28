@@ -10,5 +10,4 @@ type Planet = {
 const planets: Planet[] = []
 
 const addPlanet = () => {
-    
-}
+    }
