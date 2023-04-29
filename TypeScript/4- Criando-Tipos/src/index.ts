@@ -33,3 +33,12 @@ const searchPlanet = (name: string) => {
     planet = planets.find((e) => {return e.name === name})
     return planet
 }
+
+const addSatellitesPlanet = (name: string, nameSatellites: string) =>{
+    const planet = searchPlanet(name)
+    if(planet){
+        planet.satellites.push(nameSatellites)
+    }else{
+        alert(`Planet ${name} not found ...`)
+    }
+}
