@@ -77,3 +77,42 @@ const listSatelite = (planet: Planet) => {
     planet.satellites.forEach( e => { satellites += e})
     return satellites
 }
+let control: boolean = true
+do {
+    let option = prompt("Menu\n 1 - Adicionar planeta\n 2 - Mudar status do Planeta\n 3 - Adicionar satelite\n 4 - Remover satelite\n 5- Listar Palneta")
+    switch(option){
+        case "1" :
+            let namePlanet = prompt("Nome do planeta:")
+            let codernadas1 = Number(prompt("Codernadas Norte:"))
+            let codernadas2 = Number(prompt("Codernadas Sul:"))
+            let codernadas3 = Number(prompt("Codernadas Leste:"))
+            let codernadas4 = Number(prompt("Codernadas Oeste:"))
+            let codernadas: PlanetLocation = [codernadas1,codernadas2,codernadas3,codernadas4]
+            let situation: PlanetSituation = prompt("Situação do planeta:(Habitado,Habítavel,Inabítavel,Inexplorado)")
+            addPlanet(namePlanet,codernadas,situation)
+            break
+        case "2" :
+            let namePlanetStatus = prompt("Nome do planeta:")
+            let statusPlanet: PlanetSituation = prompt("Situação do planeta:(Habitado,Habítavel,Inabítavel,Inexplorado)")
+            updateStatusPlanet(namePlanetStatus,statusPlanet)
+            break
+        case "3" :
+            let namePlanetadd = prompt("Nome do planeta")
+            let nameSatelliteadd = prompt("Nome do Satelite")
+            addSatellitesPlanet(namePlanetadd,nameSatelliteadd)
+            break
+        case "4" :
+            let namePlanetremove = prompt("Nome do Planeta:")
+            let nameSatelliteremove = prompt("Nome do Satelite")
+            removeSatellitesPlanet(namePlanetremove,nameSatelliteremove)
+            break
+        case "5" :
+            listPlanet()
+            break
+        default:
+            alert("Saindo ...")
+            control = false
+            break
+    }
+    
+} while (control);
