@@ -36,7 +36,12 @@ async function exibirUsuario(login: string) {
         const repository: GithubRepository[] = await response.json()
         let repositoryText: string = ""
         repository.forEach( e => {
-            repositoryText += `Nome: ${e.name}\nDescrição: ${e.description}\nFork: ${e.fork}\nEstrelas: ${e.stargazers_count}\n\n`
+            repositoryText += `
+
+            Nome: ${e.name}
+            Descrição: ${e.description}
+            Fork: ${e.fork}
+            Estrelas: ${e.stargazers_count}`
         })
         alert(`
         Nome: ${user.name}
@@ -51,9 +56,9 @@ async function exibirUsuario(login: string) {
 
 function organizarArrayUsers(){
     users.sort(function(a, b){
-        if (a.public_repos < b.public_repos) {
+        if (a.public_repos > b.public_repos) {
             return -1;
-          } else if (a.public_repos > b.public_repos) {
+          } else if (a.public_repos < b.public_repos) {
             return 1;
           } else {
             return 0;
@@ -65,7 +70,7 @@ function exibirTodosUsuarios(){
     organizarArrayUsers()
     let userText: string = ""
     users.forEach( e => {
-        userText += `\nNome: ${e.name}\nID: ${e.id}\nLogin: ${e.login}\n`
+        userText += `\n      Nome: ${e.name}\n       ID: ${e.id}\n       Login: ${e.login}\n`
     })
     alert(`
     Usuarios:
@@ -80,14 +85,14 @@ function calcularTotalRepository(){
 
 function exibirTopCinco(){
     organizarArrayUsers()
-    const topCinco = users.slice(4)
+    const topCinco = users.slice(0,5)
     let message: string = "Top 5 usuários"
     topCinco.forEach((e,index) => {
         message += `
-        \nTop: ${index + 1}
+        Top: ${index + 1}
         Nome: ${e.name}
         ID: ${e.id}
-        Login: ${e.login}\n
+        Login: ${e.login}
         `
     })
 
@@ -95,16 +100,12 @@ function exibirTopCinco(){
 }
 
 async function main() {
-    await buscarUsuario('isaacpontes')
-    await buscarUsuario('julianaconde')
-    await buscarUsuario('pcaldass')
-    await buscarUsuario('lucasqueirogaa')
-    await buscarUsuario('frans203')
-    await buscarUsuario('LeDragoX')
-  
-    await exibirUsuario('isaacpontes')
-    await exibirUsuario('julianaconde')
-  
+    await buscarUsuario('JoaoVitorMirandaBandeira')
+    await buscarUsuario('olzmooraes')
+    await buscarUsuario('fdemarque')
+
+    await exibirUsuario('JoaoVitorMirandaBandeira')
+
     exibirTodosUsuarios()
     calcularTotalRepository()
     exibirTopCinco()
